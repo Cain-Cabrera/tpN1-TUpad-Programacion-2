@@ -10,7 +10,7 @@ import java.util.Scanner;
     divisible por 400.
  *  @author Cain
  */
-public class ejercicio_01 {
+public class ejercicio_01_tp2 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -20,9 +20,12 @@ public class ejercicio_01 {
         numeroUsuario = Integer.parseInt(input.nextLine());
         
         if ((numeroUsuario % 4 == 0 && numeroUsuario % 100 != 0) || (numeroUsuario % 400 == 0)) {
-            System.out.println("El año " + numeroUsuario + " es bisiesto");
+            System.out.println("El anio " + numeroUsuario + " es bisiesto");
 }       else {
             System.out.println("No es bisiesto");
+            
+      
 }
     }
+    
 }       
