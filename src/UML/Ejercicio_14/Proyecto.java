@@ -2,20 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package UML.Ejercicio_08;
+package UML.Ejercicio_14;
 
 /**
  *
  * @author Cain
  */
-public class Usuario {
+public class Proyecto {
 
     private String nombre;
-    private String email;
+    private int duracionMin;
 
-    public Usuario(String nombre, String email) {
+    public Proyecto(String nombre, int duracionMin) {
         this.nombre = nombre;
-        this.email = email;
+        this.duracionMin = duracionMin;
+    }
+
+    public Proyecto() {
     }
 
     public String getNombre() {
@@ -26,12 +29,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getEmail() {
-        return email;
+    public int getDuracionMin() {
+        return duracionMin;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDuracionMin(int duracionMin) {
+        this.duracionMin = duracionMin;
     }
 
 }

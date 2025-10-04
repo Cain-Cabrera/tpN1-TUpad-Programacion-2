@@ -9,5 +9,12 @@ package UML.Ejercicio_12;
  * @author Cain
  */
 public class Main {
+    public static void main(String[] args) {
+    Contribuyente contribuyente = new Contribuyente("Cain", "123100123");
+    Impuesto impuesto = new Impuesto(20000, contribuyente);
+    Calculadora calculadora = new Calculadora();
+    calculadora.calcular(impuesto);
+    }
+    
     
 }

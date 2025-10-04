@@ -9,5 +9,15 @@ package UML.Ejercicio_11;
  * @author Cain
  */
 public class Main {
+    public static void main(String[] args) {
+    Artista artista = new Artista("Robert Sicks", "Rock");
+    Cancion cancion = new Cancion("Black - PearJam",artista);
+    Reproductor mp3 = new Reproductor();
+    
+    mp3.ReproducirCancion(cancion);
+    
+    }
+    
+    
     
 }

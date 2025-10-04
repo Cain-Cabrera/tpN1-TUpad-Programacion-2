@@ -2,14 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package UML.Ejercicio_08;
+package UML.Ejercicio_13;
 
 /**
  *
  * @author Cain
  */
 public class Usuario {
-
     private String nombre;
     private String email;
 
@@ -34,4 +33,5 @@ public class Usuario {
         this.email = email;
     }
 
+    
 }

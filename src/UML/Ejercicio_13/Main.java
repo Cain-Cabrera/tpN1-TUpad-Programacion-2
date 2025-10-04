@@ -9,5 +9,10 @@ package UML.Ejercicio_13;
  * @author Cain
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        GeneradorQR generador = new GeneradorQR();
+        Usuario usuario = new Usuario("Cain", "firulais@gmail.com");
+        
+        generador.generar("23",usuario);
+    }
 }
