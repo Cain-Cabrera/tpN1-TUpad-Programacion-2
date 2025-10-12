@@ -12,7 +12,7 @@ public class Libro {
     private String isbn;
     private String titulo; 
     private int  anioPublicacion; 
-    private Autor autor;
+        private Autor autor;
 
     public Libro(String isbn, String titulo, int anioPublicacion, Autor autor) {
         this.isbn = isbn;
@@ -21,6 +21,9 @@ public class Libro {
         this.autor = autor;
     }
 
+    public Libro() {
+    }
+    
     public String getIsbn() {
         return isbn;
     }
@@ -37,14 +40,19 @@ public class Libro {
         return autor;
     }
     
-    
-    
     public void mostrarInfo() {
         System.out.println("Titulo: " + getTitulo());
         System.out.println("isbn: " + getIsbn());
         System.out.println("Anio de publicacion: " + getAnioPublicacion());
         System.out.println("Autor" + this.autor);
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" + "isbn=" + isbn + ", titulo=" + titulo + ", anioPublicacion=" + anioPublicacion + ", autor=" + autor + '}';
+    }
+    
+    
     
     
 
