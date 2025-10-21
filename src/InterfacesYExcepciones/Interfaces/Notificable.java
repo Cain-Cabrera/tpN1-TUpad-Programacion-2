@@ -8,9 +8,6 @@ package InterfacesYExcepciones.Interfaces;
  *
  * @author Cain
  */
-public interface PagoConDescuento {
-    public abstract double aplicarDescuento(double descuento);
-    
-    
-    public abstract void procesarPago(double pago);
+public interface Notificable {
+    public abstract void cambiarEstadoDelPedido(String nuevoEstado);
 }

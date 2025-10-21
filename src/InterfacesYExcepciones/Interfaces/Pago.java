@@ -10,7 +10,8 @@ package InterfacesYExcepciones.Interfaces;
  */
 public interface Pago {
     
-    public abstract double procesarPago(double pago); 
+    public abstract void procesarPago(double monto);
+    
 
     
 }

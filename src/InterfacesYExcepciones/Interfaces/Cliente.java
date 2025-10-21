@@ -8,17 +8,17 @@ package InterfacesYExcepciones.Interfaces;
  *
  * @author Cain
  */
-public class TarjetaDeCredito implements Pago{
+public class Cliente implements Notificable {
+    private String nombre;
+
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+    }
 
     @Override
-    public void procesarPago(double monto) {
-        System.out.println("El monto total es: " + monto);
-        System.out.println("Pago realizado");
-        
-    }
-
+    public void cambiarEstadoDelPedido(String nuevoEstado) {
+        System.out.println("Estado de su pedido: " + nuevoEstado);
     }
     
-
     
-
+}

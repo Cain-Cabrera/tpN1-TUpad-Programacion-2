@@ -8,20 +8,17 @@ package InterfacesYExcepciones.Interfaces;
  *
  * @author Cain
  */
-public class Paypal implements PagoConDescuento,Pago {
-    private String gmail;
-
-    public Paypal(String gmail) {
-        this.gmail = gmail;
-    }
+public class Paypal implements PagoConDescuento {
+ 
     @Override
-    public double procesarPago(double pago) {
-        return 0;
+    public void procesarPago(double pago) {
+        double totalPrecio = aplicarDescuento(pago);
+        System.out.println("El total del pedido es: " + totalPrecio);
+        System.out.println("El pago fue realizado");
         
     }
-    
     @Override
-    public double aplicarDescuento(double descuento) {
-        return 0;
+    public double aplicarDescuento(double monto) {
+        return monto - (monto * 0.30);
     }
 }
