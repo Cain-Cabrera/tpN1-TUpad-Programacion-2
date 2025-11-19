@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package InterfacesYExcepciones.Excepciones.Ejercicio_01;
+package InterfacesYExcepciones.Excepciones.Ejercicios;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Cain
  */
-public class Principal {
+public class DivisionXCero {
     public static void main(String[] args) {
         int num1,num2;
         Scanner input = new Scanner(System.in);
